@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const Post = (props) => {
+
+
+
     return ( 
         <div>
             <div>
@@ -11,8 +14,8 @@ const Post = (props) => {
             </div>
             <div>
             </div>
-                <button>Like</button>
-                <button>Dislike</button>
+                <button type='like' className="bi bi-cloud-lightning-fill" style={{color : 'light-blue'}}>Like</button>
+                <button type='dislike' className="bi bi-cloud-lightning-fill" style={{cololr: 'red'}}>Dislike</button>
         </div>
      );
 }
