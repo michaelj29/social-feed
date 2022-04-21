@@ -15,15 +15,19 @@ function addNewPost(entry) {
 }
 
   return (
-    <div className="App">
-      <div>
-        <NavBar sticky='top'/>
+    <div className="Container-fluid">
+      <div className='row'>
+        <NavBar />
       </div>
-      <div>
-        <CreatePost setNewThought={addNewPost} />
+      <div className='col-md-3'>
+        <div className='border-box'>
+          <CreatePost setNewThought={addNewPost} />
+        </div>
       </div>
-      <div>
-        <DisplayPost userPost={newThought} />
+      <div className='col-md-6'>
+        <div className='border-box'>
+          <DisplayPost userPost={newThought} />
+        </div>
       </div>
     </div>
   );

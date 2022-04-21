@@ -1,14 +1,15 @@
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container';
+import './NavBar.css'
+import logo from './images/logo.png'
 
 const NavBar = (props) => {
     return ( 
-        <div position='fixed'>
-            <Navbar expand="lg" variant="light" bg="light">
-                <Container>
-                    <Navbar.Brand href="#">Thought Placer</Navbar.Brand>
-                </Container>
-            </Navbar>
+        <div className="navbar">
+            <nav >
+                <div className="container-fluid">
+                    <img className='logo' src={logo}></img>
+                    <a className="navbar-brand" href="#">Thought Picker</a>
+                </div>
+            </nav>
         </div>
      );
 }

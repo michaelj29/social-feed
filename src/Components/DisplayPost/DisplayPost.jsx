@@ -23,8 +23,8 @@ const DisplayPost = (props) => {
     }
     
     return ( 
-        <div>
-            <table>
+        <div className='table'>
+            <table >
                 <thead>
                     <tr>
                         <th>Everyones Post</th>

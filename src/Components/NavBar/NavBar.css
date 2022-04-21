@@ -1,0 +1,19 @@
+.container-fluid {
+    background-color: black;
+    position: sticky;
+    height: 60px;
+}
+
+.logo {
+    height: 30px;
+    width: 40px;
+    max-height: 72px;
+    max-width: 250px;
+    margin-left: 1em;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
