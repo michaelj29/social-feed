@@ -1,5 +1,7 @@
 
 const DisplayPost = (props) => {
+
+    
     return ( 
         <div>
             <table>
@@ -11,8 +13,9 @@ const DisplayPost = (props) => {
                 <tbody>
                     {props.userPost.map((post, index) => {
                         return (
-                            <tr key={index}>
-                                <td>Some Post</td>
+                            <tr key={index + 1}>
+                                <strong>{post.name}</strong>
+                                <p>{post.thought}</p>
                             </tr>
                         )
                     })}

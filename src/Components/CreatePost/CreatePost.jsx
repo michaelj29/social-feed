@@ -12,8 +12,8 @@ const CreatePost = (props) => {
             thought: thought
         };
 
-        props.addNewThought(newPost)
-
+        props.setNewThought(newPost)
+        console.log(newPost)
     }
     
     return ( 
@@ -21,11 +21,11 @@ const CreatePost = (props) => {
             <div>
                 <div>
                     <label>Name</label>
-                    <input type ='name' value='name'></input>
+                    <input type ='name' onChange={(event) => setName(event.target.value)} value={name}></input>
                 </div>
                 <div>
                     <label>Thoughts</label>
-                    <input type ='thoughts'  value='thoughts'></input>
+                    <input type ='thoughts' onChange={(event) => setThought(event.target.value)} value={thought}></input>
                 </div>
                 <button type='submit'>Post Thought</button>
             </div>

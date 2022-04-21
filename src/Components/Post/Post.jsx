@@ -7,10 +7,17 @@ const Post = (props) => {
     return ( 
         <div>
             <div>
-                <strong>Mikey Mike </strong>
+            {props.setNewThought.map((post) => {
+                        return (
+                            <div>
+                                <u>{post.name}</u>
+                                <u>{post.thought}</u>
+                            </div>
+                        )
+                    })}
             </div>
             <div>
-                <p>Here is our first status that behaves like Tom from Myspace. I guess Im stuck here XD</p>
+                <p>Post</p>
             </div>
             <div>
             </div>
