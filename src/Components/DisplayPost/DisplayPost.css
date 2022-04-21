@@ -1,0 +1,19 @@
+button {
+    background-color:white;
+
+}
+.active {
+    background-color: rgb(255, 255, 127);
+}
+
+.inactive {
+    background-color: white;
+}
+
+.active-d {
+    background-color: rgb(255, 127, 153);
+}
+
+.inactive-d {
+    background-color: white;
+}

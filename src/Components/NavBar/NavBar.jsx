@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 const NavBar = (props) => {
     return ( 
-        <div>
+        <div position='fixed'>
             <Navbar expand="lg" variant="light" bg="light">
                 <Container>
                     <Navbar.Brand href="#">Thought Placer</Navbar.Brand>
